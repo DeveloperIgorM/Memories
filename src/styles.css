@@ -1,0 +1,61 @@
+* {
+    padding:0;
+    margin: 0;
+    font-family: Cambria;
+    box-sizing: border-box; /*para os elementos de input nao ultrapassarem a largura desejada.*/
+    color: #444;
+}
+a {
+    text-decoration: none; /*para tirar os uderlines dos links*/
+    color: #444;
+    transition: .4s;
+}
+a:hover {
+    color: #dec129;
+}
+
+/* FORM */
+
+form {
+    width:450px; /* limitando a largura do formulário */
+    margin: 0 auto; /* centralizando ele na tela */
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em; /* espaçamento entre um item e outro */
+} 
+.form-group label {
+    font-weight: bold;
+    font-size: .9em;
+    margin-bottom: .4em;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: .5em;
+    color: #777;
+    font-size: .8em;    
+} 
+
+input[type="submit"] {
+    background-color: #efefef;
+    border: 2px solid transparent;
+    padding: 0.6em 1em;  /* 0.6em para vertical e 1em para horizontal (espaçamento interno) para dar aspecto de botao */
+    font-weight: bold; /* font em negrito */
+    font-size: 1.1em;
+    cursor: pointer; /* coloca a maozinha do mouse quando passa em cima  (progress) deixa a seta do mmouse carregando */
+    transition: 0.4s;
+}
+input[type="submit"]:hover {
+    color:#dec129;
+    border-color: #dec129;
+    background-color: transparent;
+}
+
+.validation-error p { /* mensagens de erro */
+    color: #dc3545;
+    margin-top: 0.4em;
+    border-left: 3px solid #dc3545; /* deixa uma pequena borda antes da mensagem, tipo um detalhinho */
+    padding-left: 0.2em; /* cria um espacinho para esquerda*/
+}

@@ -1,0 +1,4 @@
+.container {
+    min-height: 65vh;  /* 65% da tela vai ser responsável pelo conteúdo da pagina */
+    margin-top: 1em;
+}

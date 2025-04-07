@@ -1,0 +1,25 @@
+.message {
+    position: fixed;
+    top: 3em;
+    width: 50%;                 /* Largura do componente */
+    margin-left: 50%;
+    left: -25%;
+    z-index: 10;                /* deixa o elemento a cima de todos "como destaque" */
+    background-color: #fff;
+    border: 3px solid  #dec129;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+.message-header {
+    display: flex;
+    justify-content: space-between; /* deixa um espaço entre o icone e a mensagem */
+    margin-bottom: 1em;
+}
+.message-header button {
+    padding: 0.5em;
+    cursor: pointer;
+}
+.message p {
+    font-size: 1.2em;
+}

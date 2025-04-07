@@ -1,0 +1,13 @@
+.about {
+    display: flex;
+    flex-direction: column; /*UM ITEM ABAIXO DO OUTRO */
+    align-items: center; /* ALINHANDO TUDO NA HORIZONTAL*/
+    justify-content: center; /*ALINHANDO TUDO NA VERTICAL */
+    padding: 2em; /*ESPAÇAMENTO INTERNO */
+}
+h2, p {
+    margin-bottom: 1em; /* PARA FICAR ESPAÇADOS ENTRE SI */
+}
+.about a {
+    text-decoration:underline;
+}
