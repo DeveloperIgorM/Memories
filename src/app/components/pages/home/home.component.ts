@@ -10,13 +10,15 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
 
-    AllMoments: Moment[] = []
-    moments: Moment[] = []
-    baseApiUrl= environment.baseApiUrl //comando que permite buscar dados da API
+    AllMoments: Moment[] = [];
+    moments: Moment[] = [];
+    baseApiUrl= environment.baseApiUrl; //comando que permite buscar dados da API
+    faSearch = faSearch;
+    searchTerm: string = '';
 
     //TODO SEARCH
 
@@ -29,11 +31,21 @@ export class HomeComponent implements OnInit {
       const data = items.data
 
       data.map((item) => {
-        item.created_at = new Date(item.created_at!).toLocaleDateString('pt-BR');
-
+        item.created_at = new Date(item.created_at!).toLocaleDateString(
+          'pt-BR'
+        );
       });
-      this.AllMoments = data;
-      this.moments = data;
+      this.AllMoments = data
+      this.moments = data
+    });
+  }
+  search(e: Event): void {
+
+    const target = e.target as HTMLInputElement
+    const value = target.value
+
+    this.moments = this.AllMoments.filter((moment) => {
+    return moment.title.toLowerCase().includes(value)
     });
   }
 }

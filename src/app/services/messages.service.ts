@@ -15,7 +15,7 @@ export class MessagesService {
     //Vai mostrar a mensagem depois sumir após 40seg
     setTimeout(() => {
       this.clear();
-    },4000);
+    }, 4000);
   }
     clear(){
     this.message = '';
