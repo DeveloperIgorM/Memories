@@ -35,4 +35,9 @@ export class MomentService {
     const url = `${this.apiUrl}/${id}`;
     return this.http.delete(url);
   }
+
+  updateMoment(id: Number, formData: FormData): Observable<FormData> {
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.put<FormData>(url, formData); //enviando o url com o id do registro e os dados do formulário preenchido p/ edição
+  }
 }
