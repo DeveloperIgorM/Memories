@@ -1,27 +1,86 @@
-# Moments
+<h1 align="center">📸 Memories – Projeto Angular</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
+![Imagem do projeto](imagens/memories.jpg)
 
-## Development server
+<br/>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Memories é uma aplicação web desenvolvida com **Angular**, com foco em simular uma rede social simples de memórias, permitindo criar, editar, visualizar e deletar registros de forma prática. Este projeto foi construído como parte de um curso prático ministrado por **Matheus Battisti**, com o objetivo de consolidar conhecimentos em **desenvolvimento front-end moderno**, integração com **API real** e **componentização escalável**.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🚀 Demonstração
 
-## Build
+🔗 **Projeto online**: [Acessar site 📍](https://memories-three-rho.vercel.app/)  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## 🧠 Funcionalidades
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- ✅ **CRUD completo** (Create, Read, Update, Delete)  
+- 🔍 **Busca dinâmica** com filtro e tratamento de dados no front-end  
+- 🌐 **Consumo de API REST** com backend Adonis.js  
+- 🧩 **Componentização** com exibição de dados estruturados  
+- 🔀 **Angular Router** para navegação entre páginas  
+- 🧱 **Arquitetura escalável** de componentes  
+- 🔧 Boas práticas de organização e reusabilidade de código  
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🛠️ Tecnologias e Ferramentas
 
-## Further help
+| Ferramenta          | Descrição                                  |
+|---------------------|---------------------------------------------|
+| **Angular**         | Framework principal da aplicação            |
+| **TypeScript**      | Linguagem principal do projeto              |
+| **HTML5**           | Estrutura do layout                         |
+| **CSS3**            | Estilização dos componentes                 |
+| **Adonis.js**       | API backend REST para integração real       |
+| **Angular Router**  | Simulação de rotas e navegação dinâmica     |
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+
+## 🗂️ Estrutura do Projeto (simplificada)
+
+```bash
+/src
+ ├── app
+ │   ├── components     
+ │   └── services       
+ ├── assets             
+ └── environments
+```  
+
+## 🧪 Como executar o projeto localmente
+
+### Clone o repositório:
+
+```bash
+git clone https://github.com/DeveloperIgorM/memories.git
+cd memories
+```
+
+### Instale as dependências:
+```bash
+npm install
+```
+
+### Execute o servidor de desenvolvimento:
+```bash
+ng serve
+```
+
+### Acesse no navegador:
+http://localhost:4200
+
+
+## 👨🏾‍💻 Autor
+### Desenvolvido por Igor Matheus
+
+🌐 [Portfólio](https://igorportfolio.vercel.app/)
+
+💻 [GitHub](https://github.com/DeveloperIgorM)
+
+
+## 📝 Licença
+Este projeto está licenciado sob a licença MIT.<br/>
+Sinta-se livre para usá-lo, modificá-lo e distribuí-lo conforme desejar.
